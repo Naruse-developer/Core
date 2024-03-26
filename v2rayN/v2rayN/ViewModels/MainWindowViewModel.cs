@@ -748,7 +748,6 @@ namespace v2rayN.ViewModels
             finally
             {
                 Application.Current.Shutdown();
-                Environment.Exit(0);
             }
         }
 
@@ -1160,18 +1159,22 @@ namespace v2rayN.ViewModels
             {
                 return;
             }
-            (new UpdateHandle()).RunAvailabilityCheck((bool success, string msg) =>
+            else
             {
-                _noticeHandler?.SendMessage(msg, true);
-                Application.Current.Dispatcher.Invoke((Action)(() =>
+                (new UpdateHandle()).RunAvailabilityCheck((bool success, string msg) =>
                 {
-                    if (!Global.ShowInTaskbar)
+                    _noticeHandler?.SendMessage(msg, true);
+                    Application.Current.Dispatcher.Invoke((Action)(() =>
                     {
-                        return;
-                    }
-                    RunningInfoDisplay = msg;
-                }));
-            });
+                        if (!Global.ShowInTaskbar)
+                        {
+                            return;
+                        }
+                        RunningInfoDisplay = msg;
+                    }));
+                });
+            }
+            return;
         }
 
         //move server
