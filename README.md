@@ -9,7 +9,7 @@ A GUI client for Windows 7 support ONLY, support [Xray core](https://github.com/
 
 
 ## How to use
-- If you are new to this, please download v2rayN-With-Core(.net8).zip or 7z from [Pre-releases](https://github.com/2dust/v2rayN/releases)
+- If you are new to this, please download v2rayN-With-Core(.net8).zip or 7z from [Releases](https://github.com/Naruse-developer/Core/releases/tag/6.29.2)
 - Run v2rayN.exe
 
 ## Requirements  
@@ -19,3 +19,8 @@ A GUI client for Windows 7 support ONLY, support [Xray core](https://github.com/
 
 ## Telegram Channel
 [github_2dust](https://t.me/github_2dust)
+
+## Warning
+>[!warning]
+>這是Windows7支援最後之版本,此後將不再維護和更新. <br>
+>This is the last version of Windows 7 supported and will no longer be maintained or updated.
