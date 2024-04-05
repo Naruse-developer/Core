@@ -9,7 +9,7 @@ A GUI client for Windows 7 support ONLY, support [Xray core](https://github.com/
 
 
 ## How to use
-- If you are new to this, please download v2rayN-With-Core(.net8).zip or 7z from [Releases](https://github.com/Naruse-developer/Core/releases/tag/6.29.2)
+- If you are new to this, please download v2rayN-With-Core(.net8).zip or 7z from [Releases](https://github.com/Naruse-developer/Core-Win7/releases/tag/6.29.1)
 - Run v2rayN.exe
 
 ## Requirements  
